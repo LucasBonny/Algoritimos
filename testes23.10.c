@@ -73,8 +73,36 @@ int main(){
         //INICIO DE IMC
         else if(opc == 3){ 
             system("cls");
-            printf("Em desenvolvimento...\n");
-            sleep(5);
+            double altura, peso, res;
+            printf("Digite seu peso: ");
+            scanf("%lf", &peso);
+            printf("Digite sua altura: ");
+            scanf("%lf", &altura);
+            res = peso / (pow(altura,2));
+            printf("---------------------\nSeu IMC e: %.2lf\n\n", res);
+            if(res < 17){
+                printf("Muito abaixo do peso!");
+            }
+            else if(res >= 17 && res <= 18.49){
+                printf("Abaixo do peso!");
+            }
+            else if(res >= 18.5 && res <= 24.99){
+                printf("Peso normal!\nParabens!");
+            }
+            else if(res >= 25 && res <= 29.99){
+                printf("Acima do peso!");
+            }
+            else if(res >= 30 && res <= 34.99){
+                printf("Obesidade I!");
+            }
+            else if(res >= 35 && res <= 39.99){
+                printf("Obesidade II (severa)");
+            }
+            else if(res >= 40){
+                printf("Obesidade III (morbida)");
+            }
+            printf("\n\nVoltando ao menu principal!");
+            sleep(10);
             system("cls");
             continue;
         }
