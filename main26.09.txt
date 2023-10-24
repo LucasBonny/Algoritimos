@@ -1,0 +1,41 @@
+operadores aritimeticos
+especificadores de formato
+variaveis - regras de nomeclatura
+como atribuir valor a variavel
+atribuição aritimetica
+    ++
+    --
+    +=
+    -=
+    *=
+    /=
+condiçoes
+    if(condição){
+        printf(valor);
+    }
+condiçoes logicos-relacionais
+    > maior
+    < menor
+    >= maior ou igual
+    <= menor ou igual
+    == igual
+    != diferente
+
+
+int main(){
+    float valor1, valor2, valor3;
+    printf("Digite o valor da primeira nota: ");
+    scanf("%f", &valor1);
+    while (!valor1 == 0 && !valor1 >= 10){
+        printf("Digite o valor da segunda nota: ");
+        scanf("%f", &valor1);
+        while(!valor2 < 0 && !valor2 > 10){
+            printf("Digite o valor da terceira nota: ");
+            scanf("%f", &valor1);
+            while(!valor3 < 0 && !valor3 > 10){
+                print("Deu certo!");
+            } 
+        }
+    }
+}
+

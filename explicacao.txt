@@ -1,0 +1,48 @@
+abra o dev c++
+aperte em file - new - project - empty project - C Project - Make Default - Coloque um nome pro projeto - OK.
+
+include
+
+stdio.h = io = in out = entrada e saida, o codigo n compila sem ele pois ele precisa para executar entrada e saida como printf/scanf
+
+int main(){} bloco obrigatório, o codigo roda dentro dele/ ele não roda fora.
+tudo q ser posto dentro de chave será executado.
+
+printf = é uma função de saida, só mostrar dados na tela.
+printf("Hello World"); 
+
+qualquer instrução devo concluir com ;
+
+vai dar erro na linha abaixo onde deve ser corrigida.
+
+// é feito para comentário para 1 linha
+
+/*
+é feito para comentar em várias linhas.
+*/
+
+o que é variavel?
+
+é um espaço em memoria reservado para ser modificado depois.
+a variavel tem q ter um tipo e um nome
+
+int idade = só pode ser guardado numeros inteiros
+
+declarar variável.
+
+variavel tem q ter um tipo 
+    int idade;
+    ||    
+    tipo
+
+printf é pra saida de dados.
+
+para atribuir a idade
+
+scanf("%d", &idade;); to pegando o q o cliente inseriu.
+ & - é pra guardar - ele ta apontando o que é pra guardar.
+
+
+ agora irei usar printf("%d", idade); o & não é necessario para puxar a informação.
+
+ string não recebe & no scanf. //Vetores
