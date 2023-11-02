@@ -17,6 +17,12 @@ int main(){
             system("cls"); //Limpar o historico do terminal.
             printf("Formato -> 1 + 1\n\nOperadores Disponiveis: \n'+' - Adicao \n'-' - Subtracao \n'*' - Multiplicacao \n'/' - Divisao \n\nDigite os valores: ");
             scanf("%lf %c %lf", &valor1, &op, &valor2);
+            if(valor1 == '+' && valor1 == '-'&& valor1 == '*' && valor1 == '/'){
+                printf("Valores Invalido!\n\nAguarde 5s e voce voltara ao menu!");
+                sleep(5);
+                system("cls");
+                continue;
+            }
             if(op == '+'){
                 system("cls");
                 res = valor1 + valor2;
@@ -64,7 +70,11 @@ int main(){
         //INICIO DE calcular a area
         else if(opc == 2){ 
             system("cls");
-            printf("Em desenvolvimento...\n");
+            printf("[====A AREA DE UM====]\n\n1 - Circunferencia\n2 - Triangulo\n3 - Quadrado\n0 - Sair\n\nDigite um numero: ");
+            scanf("%d", &opc);
+            if(opc == 1){
+                printf("Teste");
+            }
             sleep(5);
             system("cls");
             continue;
@@ -107,7 +117,7 @@ int main(){
             continue;
         }
         //FIM DE IMC
-        else{
+        else{//SAIR
             if(opc == 0){
                 continue;
             }
