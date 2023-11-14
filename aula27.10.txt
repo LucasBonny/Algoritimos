@@ -1,0 +1,21 @@
+vetores - indice
+é o indice que fica a direita da variavel declarando o tamanho da variavel.
+
+manipulação de vetores.
+
+com o vetor não consegue mostrar todos os vetores.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
