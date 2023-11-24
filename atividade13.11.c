@@ -21,7 +21,7 @@ int main(){
         printf("-------------\n");
     }
 }*/
-/*Atividade 2
+//+Atividade 2
 int main(){
     clear;
     int mat1[2][2], mat2[2][2],res[2][2];
@@ -46,8 +46,8 @@ int main(){
             printf("Soma da matriz [%d][%d] = %d\n",j+1,i+1, res[j][i]);
         }
     }
-}*/
-int main(){
+}
+/*int main(){
     int j, x,i,valor[3][3];
     valor[0][0] =1;
     valor[1][0] =2;
@@ -66,4 +66,4 @@ int main(){
             printf("valor[%d][%d] X %d = %d\n", j+1, i+1, x, valor[j][i]);
         }
     }
-}
+}*/

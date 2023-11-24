@@ -3,7 +3,7 @@
 06% == 010 min
 60% == 100 min
 30% == 050 min 
-*/
+
 #include <stdio.h>
 
 int main(){
@@ -16,5 +16,29 @@ int main(){
     resultado = 100 - porcentagem;
     printf("Sua bateria ainda durara %d horas e %d minutos.", horas, minutos);
 //se a bateria tiver 10% ela vai durar 16 min
+}*/
+#include <stdio.h>
+#include <stdlib.h>
+#define porc 96;
+//tentativa dia 24/11/2023
+int main(){
+    //calcular a porcentagem da bateria
+    int bat, res;
+    system("cls");
+    printf("Digite a porcentagem da sua bateria: ");
+    scanf("%d", &bat);
+    if(bat < 0 || bat > 100) return printf("Valor invalido!");
+    res = bat * porc;
+    res = res / 60; 
+    if(res <= 60){
+        printf("Sua bateria vai durara ainda: %d min", res);
+    }
+    else if(res <= 120){
+        res -= 60;
+        printf("Sua bateria vai durara ainda: 1 hr e %d min", res);
+    }
+    else if(res <= 160){
+        res -= 120;
+        printf("Sua bateria vai durara ainda: 2hrs e %d min", res);
+    }
 }
-
