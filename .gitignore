@@ -1,0 +1,35 @@
+# Arquivos de compilação
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dylib
+*.dll
+
+# Arquivos temporários do sistema
+*.bak
+*.swp
+*.tmp
+*~
+
+# Diretórios gerados por compilação
+bin/
+build/
+out/
+
+# Arquivos específicos do editor/IDE
+.vscode/
+*.vscode/
+*.idea/
+*.project
+*.workspace
+
+# Arquivos de logs
+*.log
+
+# Arquivos de dependências do sistema (caso você esteja utilizando o make, por exemplo)
+*.depend
+
+output/
