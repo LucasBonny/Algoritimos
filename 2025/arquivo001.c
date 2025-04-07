@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 int main() {
-   
+    system("cls");
     FILE * fp;
 
-    fp = fopen("arquivo.txt", "r");
+    fp = fopen("arquivo.csv", "w");
 
     if(fp == NULL) {
         printf("Erro na abertura do arquivo.\n");
