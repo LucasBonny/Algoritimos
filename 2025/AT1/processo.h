@@ -3,6 +3,9 @@
 
 #define MAX_IDS 10
 
+#define QNT_LINHAS 18393
+
+
 typedef struct {
     int Id;
     char Numero[25];
@@ -14,11 +17,13 @@ typedef struct {
 } Processo;
 
 Processo* LerArquivo(const char *Diretorio, int N);
-void ordenar_por_id(Processo vet[], int n);
-void ordenar_por_data(Processo vet[], int n);
-int contar_por_id_classe(Processo vet[], int n, int id_classe);
-int contar_id_assuntos(Processo vet[], int n);
-void listar_multiplos_assuntos(Processo vet[], int n);
-int dias_em_tramitacao(char *data_ajuizamento);
+void OrdenarPorId(Processo *Vetor, int N);
+void OrdenarPorData(Processo Vetor[], int N);
+int ContarPorIdClasse(Processo Vetor[], int N, int IdClasse);
+int EstaNoVetor(int *Vetor, int Tamanho, int Valor);
+int ContarPorIdAssunto(Processo Vetor[], int N);
+void ListarMultiplosAssuntos(Processo Vetor[], int N);
+int DiasEmTramitacao(char *DataAjuizamento);
+void SalvarEmCsv(const char *NomeArquivo, Processo Vetor[], int N);
 
 #endif

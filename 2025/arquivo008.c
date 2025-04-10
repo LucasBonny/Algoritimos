@@ -17,7 +17,8 @@ typedef struct {
 } Equipe;
     
 Equipe* LerDados(const char *NomeArquivo) {
-    
+    FILE *fp = fopen(NomeArquivo,"r");
+    fprintf(fp, "%s", fp);
 }
 
 int main() {

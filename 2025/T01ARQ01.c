@@ -8,6 +8,7 @@ typedef struct {
 
 Fracao criarFracao(int numerador, int denominador);
 Fracao simplificarFracao(Fracao F);
+Fracao somarFracao(Fracao F, Fracao G);
 
 int main() {
     system("clear");
@@ -32,7 +33,7 @@ Fracao simplificarFracao(Fracao F) {
     int MDC = 1;
     int aux = (F.numerador > F.denominador) ? F.denominador : F.numerador; 
 
-    for(int i = 0; i < aux; i++){
+    for(int i = 1; i <= aux; i++){
         if(F.numerador % i == 0 && F.denominador % i == 0) {
             MDC = i;
         }
@@ -42,4 +43,8 @@ Fracao simplificarFracao(Fracao F) {
     F.denominador = F.denominador / MDC;
 
     return F;
+}
+
+Fracao somarFracao(Fracao F, Fracao G) {
+    
 }
